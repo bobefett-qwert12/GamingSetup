@@ -6,6 +6,15 @@ import javax.swing.JOptionPane;
 
 public class SetupController
 {
+	private GamingSetup[] setupArray;
+	private GamingSetup[] gamingArray;
+	
+	public SetupController()
+	{
+		setupArray = new GamingSetup[5];
+		gamingArray = new GamingSetup[10];
+	}
+	
 	public void start() {
 		ArrayList<GamingSetup> setupList = buildAList();
 		JOptionPane.showMessageDialog(null, "Here are the monitor counts for each setup:");
